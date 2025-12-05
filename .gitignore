@@ -225,7 +225,7 @@ __pycache__/
 
 
 # ============================
-# 🚫 LARGE MODEL & DATA FILES
+# LARGE MODEL & DATA FILES
 # ============================
 *.pt
 *.pth
@@ -239,7 +239,7 @@ __pycache__/
 *.model
 
 # ============================
-# 🚫 DATASETS & OUTPUT FILES
+# DATASETS & OUTPUT FILES
 # ============================
 *.csv
 *.tsv
