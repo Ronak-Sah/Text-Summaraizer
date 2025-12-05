@@ -48,3 +48,25 @@ button:hover {
     border-radius: 10px;
     min-height: 80px;
 }
+
+
+.options {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.options label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+.options input[type="range"] {
+    width: 150px;
+    margin-top: 5px;
+}
+

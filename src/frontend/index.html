@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>AI Text Summarizer</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="static/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
@@ -12,12 +13,24 @@
 
     <textarea id="inputText" placeholder="Enter your text here..."></textarea>
 
+    <div class="options">
+        <label>
+            Max Length: <span id="maxLengthValue">128</span>
+            <input type="range" id="maxLength" min="32" max="512" value="128">
+        </label>
+        <label>
+            Num Beams: <span id="numBeamsValue">8</span>
+            <input type="range" id="numBeams" min="1" max="12" value="8">
+        </label>
+</div>
+
     <button onclick="summarizeText()">Summarize</button>
 
     <h2>Summary:</h2>
     <div id="output"></div>
 </div>
 
-<script src="script.js"></script>
+<!-- <script src="script.js"></script> -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
