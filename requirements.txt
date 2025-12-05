@@ -8,7 +8,7 @@ pandas
 nltk
 tqdm
 PyYAML
-torch==2.2.2
+torch==2.9.1
 python-box==6.0.2
 ensure==1.0.2
 flask==3.1.2
