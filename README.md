@@ -186,12 +186,4 @@ This project demonstrates:
 **Ronak Sah**
 B.Tech Student
 
----
 
-## ⭐ If you like this project, give it a star on GitHub!
-
-
-
----
-
-✅ *Built with real-world ML engineering and local production deployment best practices.*
