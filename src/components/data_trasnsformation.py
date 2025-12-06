@@ -24,7 +24,7 @@ class Data_Transformation:
     
     def convert(self):
         dataset_samsum = load_dataset("csv", data_files={
-            "train": "artifacts/data_ingestion/samsum/train.csv",
+            "train": "artifacts/data_ingestion/samsum/train (1).csv",
             "test": "artifacts/data_ingestion/samsum/test.csv",
             "validation": "artifacts/data_ingestion/samsum/validation.csv",
             }

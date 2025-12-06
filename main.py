@@ -6,70 +6,89 @@ from src.pipeline.stage_04_model_trainer import Model_trainer_pipeline
 from src.pipeline.stage_05_model_evaluation import Model_evaluation_pipeline
 
 logger.info("Code Starts")
-logger.info("======================================================================")
 
 
 Stage_Name="Data Ingestion Stage"
+
 try:
-    logger.info(f">>>>>>>>>>>>>>>>>{Stage_Name} started<<<<<<<<<<<<<<<<<<<<<<<")
+    logger.info("=========================================================================================")
+    logger.info(f"                                  {Stage_Name} started ")
+    logger.info("=========================================================================================")
     data_ingestion=Data_Ingestion_pipeline()
     data_ingestion.main()
-    logger.info(f">>>>>>>>>>>>>>>>>{Stage_Name} ended<<<<<<<<<<<<<<<<<<<<<<<")
+    logger.info("=========================================================================================")
+    logger.info(f"                                  {Stage_Name} ended ")
+    logger.info("=========================================================================================")
 except Exception as e:
     logger.exception(e)
     raise e
 
 
-logger.info("======================================================================")
+
 
 
 Stage_Name="Data Validation Stage"
 try:
-    logger.info(f">>>>>>>>>>>>>>>>>{Stage_Name} started<<<<<<<<<<<<<<<<<<<<<<<")
+    logger.info("=========================================================================================")
+    logger.info(f"                                  {Stage_Name} started ")
+    logger.info("=========================================================================================")
     data_validation=Data_Validation_pipeline()
     data_validation.main()
-    logger.info(f">>>>>>>>>>>>>>>>>{Stage_Name} ended<<<<<<<<<<<<<<<<<<<<<<<")
+    logger.info("=========================================================================================")
+    logger.info(f"                                  {Stage_Name} ended ")
+    logger.info("=========================================================================================")
 except Exception as e:
     logger.exception(e)
     raise e
 
 
-logger.info("======================================================================")
 
 Stage_Name="Data transformation Stage"
 try:
-    logger.info(f">>>>>>>>>>>>>>>>>{Stage_Name} started<<<<<<<<<<<<<<<<<<<<<<<")
-    data_transformation=Data_Transformation_pipeline()
-    data_transformation.main()
-    logger.info(f">>>>>>>>>>>>>>>>>{Stage_Name} ended<<<<<<<<<<<<<<<<<<<<<<<")
+    logger.info("=========================================================================================")
+    logger.info(f"                                  {Stage_Name} started ")
+    logger.info("=========================================================================================")
+    data_trasformation=Data_Transformation_pipeline()
+    data_trasformation.main()
+    logger.info("=========================================================================================")
+    logger.info(f"                                  {Stage_Name} ended ")
+    logger.info("=========================================================================================")
 except Exception as e:
     logger.exception(e)
     raise e
 
-logger.info("======================================================================")
+
 
 
 Stage_Name="Model training Stage"
 try:
-    logger.info(f">>>>>>>>>>>>>>>>>{Stage_Name} started<<<<<<<<<<<<<<<<<<<<<<<")
+    logger.info("=========================================================================================")
+    logger.info(f"                                  {Stage_Name} started ")
+    logger.info("=========================================================================================")
     model_trainer=Model_trainer_pipeline()
     model_trainer.main()
-    logger.info(f">>>>>>>>>>>>>>>>>{Stage_Name} ended<<<<<<<<<<<<<<<<<<<<<<<")
+    logger.info("=========================================================================================")
+    logger.info(f"                                  {Stage_Name} ended ")
+    logger.info("=========================================================================================")
 except Exception as e:
     logger.exception(e)
     raise e
 
-logger.info("======================================================================")
 
 
 Stage_Name="Model Evaluation Stage"
 try:
-    logger.info(f">>>>>>>>>>>>>>>>>{Stage_Name} started<<<<<<<<<<<<<<<<<<<<<<<")
+    logger.info("=========================================================================================")
+    logger.info(f"                                  {Stage_Name} started ")
+    logger.info("=========================================================================================")
     model_evaluation=Model_evaluation_pipeline()
     model_evaluation.main()
-    logger.info(f">>>>>>>>>>>>>>>>>{Stage_Name} ended<<<<<<<<<<<<<<<<<<<<<<<")
+    logger.info("=========================================================================================")
+    logger.info(f"                                  {Stage_Name} ended ")
+    logger.info("=========================================================================================")
 except Exception as e:
     logger.exception(e)
     raise e
 
-logger.info("======================================================================")
+logger.info("terminating..........")
+logger.info("--------------------------------------------------   CODE RUN SUCCESSFULLY  ----------------------------------------------------------")
