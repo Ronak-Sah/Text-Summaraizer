@@ -1,4 +1,4 @@
-# Text Summarizer using Pegasus (End-to-End MLOps Project)
+# Text Summarizer using Pegasus (End-to-End Deep Learning Project)
 
 This project is a **complete end-to-end NLP MLOps pipeline** for training, evaluating, and **locally deploying** a **Transformer-based Text Summarization model** using **Google Pegasus**.
 Due to the **large model size and high cloud hosting cost**, the application is deployed on **localhost using Flask** instead of cloud platforms.
